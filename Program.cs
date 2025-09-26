@@ -1,23 +1,11 @@
-﻿using System;
-
-class Program
-{
-    static void Main()
-    {
-        Console.WriteLine("Работу выполнили: Андрей и Роман");
-
-        Console.Write("Введите имя: ");
-        string name = Console.ReadLine();
-
-        Console.Write("Введите фамилию: ");
-        string surname = Console.ReadLine();
-
-        Console.Write("Введите год рождения: ");
-        int birthYear = int.Parse(Console.ReadLine());
-
-        int currentYear = DateTime.Now.Year;
-        int age = currentYear - birthYear;
-
-        Console.WriteLine($"Добавлен пользователь {name} {surname}, возраст - {age}");
-    }
-}
+﻿Console.WriteLine("Работу выполнили Андрей и Роман");
+Console.WriteLine("Введите Имя");
+string n = Console.ReadLine();
+Console.WriteLine("Введите Фамилию");
+string f = Console.ReadLine();
+Console.WriteLine("Введите дату рождения");
+int d = Convert.ToInt32(Console.ReadLine());
+int nd = 2025;
+int hh;
+hh = nd - d;
+Console.WriteLine("Добавлен пользователь"); Console.WriteLine(f); Console.WriteLine(n); Console.WriteLine(hh);
